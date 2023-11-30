@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form class="form__items" action="">
+        <div class="time form__item">
+            <label for="" class="time__type">Vehicle time</label>
+            <select class="set__type-time time-type select" id="time-select">
+                <option class="time-type__minutes" value="inMinutes">Minutes</option>
+                <option class="time-type__hours" value="inHours">Hours</option>
+            </select>
+            <input placeholder="Write your time separating by space" type="text" class="time__value input">
+        </div>
+        <div class="distance form__item">
+            <label for="" class="distance__type">Vehicle distance</label>
+            <select class="set__type-distance distance-type select" id="distance-select">
+                <option class="distance-type__km" value="inKilometers">Kilometers</option>
+                <option class="distance-type__meters" value="inMeters">Meters</option>
+            </select>
+            <input placeholder="Write your distance separating by space" type="text" class="distance__value input">
+        </div>
+        <button class="button" type="submit">Calculate</button>
+        <div class="result" ></div>
+    </form>
+    <script src="main.js" ></script>
+</body>
+</html>
